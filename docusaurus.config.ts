@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Start Your online Presence with coodic ',
+  tagline: 'Coodic is a powerful solution designed to help startups build innovative, scalable applications.',
+  favicon: 'img/coodic.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -68,71 +68,115 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'COODIC',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'COODIC Logo',
+        src: 'img/coodic.png',
       },
       items: [
         {
+          to: '/about', // Create an About page if you don't have one
+          label: 'About Us',
+          position: 'right',
+        },
+      
+        {
+          to: '/projects', // Highlight past work
+          label: 'Projects',
+          position: 'right',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          position: 'right',
+          label: 'Careers',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: '/blog',
+          label: 'Blog',
+          position: 'right',
+        },
+        {
+          to: '/contact',
+          label: 'Contact',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/coodic',
           label: 'GitHub',
           position: 'right',
         },
+       
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Products',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Web Platforms',
+              to: '/project',
+            },
+            
+          ],
+        },
+        {
+          title: 'links',
+          items: [
+            {
+              label: 'About ',
+              to: '/about',
+            },
+            
+            
+      
+            {
+              label: 'Contact',
+              to: '/contact',
             },
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: 'Resources',
           items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
+              label: 'Careers',
+              to: '/careers',
+            },
+          
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/coodic',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/coodic',
+            },
+            {
+              label: 'X (Twitter)',
+              href: 'https://x.com/coodic',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A101964191&keywords=coodic&origin=RICH_QUERY_SUGGESTION&position=0&sid=pZg',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Coodic. All rights reserved.`,
     },
+    
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

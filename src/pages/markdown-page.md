@@ -1,7 +1,7 @@
 ---
-title: Markdown page example
+id: intro
+title: Welcome to Coodic
+sidebar_label: Introduction
 ---
 
-# Markdown page example
-
-You don't need React to write simple standalone pages.
+Coodic is a powerful software solution designed to help startups build innovative, scalable applications. Get started with us.

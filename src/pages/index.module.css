@@ -1,23 +1,225 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* src/pages/index.module.css */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0 4rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(135deg, var(--hero-bg-start, #e6f7fa), var(--hero-bg-end, #d1f0f5));
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/* Dark mode adjustments for hero background */
+[data-theme="dark"] .heroBanner {
+  --hero-bg-start: #1d2126; /* Darker blue for dark mode */
+  --hero-bg-end: #1c232c;
 }
+
+.heroLogo {
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.hero__title {
+  font-size: 6rem; /* Increased size */
+  font-weight: 700;
+  background: linear-gradient(90deg, #87ceeb, #00b7eb); /* Sky blue gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* Dark mode for hero title gradient */
+[data-theme="dark"] .hero__title {
+  background: linear-gradient(90deg, #a3dffa, #4dc3fa); /* Lighter sky blue gradient for dark mode */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .buttons {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+}
+
+.features {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: var(--ifm-background-color); /* Use Docusaurus background */
+}
+
+.sectionTitle {
+  font-size: 3.5rem; /* Increased size */
+  margin-bottom: 2rem;
+  color: var(--section-title-color, #1a2b49);
+}
+
+/* Dark mode for section title */
+[data-theme="dark"] .sectionTitle {
+  --section-title-color: #e6f7fa;
+}
+
+.features h3 {
+  font-size: 1.8rem; /* Increased size */
+  margin-bottom: 0.5rem;
+  color: #00c4e6; /* Coodic cyan */
+}
+
+.features p {
+  color: var(--feature-text-color, #718096);
+  font-size: 1.1rem;
+}
+
+/* Dark mode for feature text */
+[data-theme="dark"] .features p {
+  --feature-text-color: #a0aec0;
+}
+.whatWeDo {
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #f9f9f9, #eef6f8);
+  text-align: center;
+}
+
+[data-theme="dark"] .whatWeDo {
+  background: linear-gradient(to right, #1d2327, #11181f);
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #1a2b49;
+  margin-bottom: 3rem;
+}
+
+[data-theme="dark"] .sectionTitle {
+  color: #e6f7fa;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-top: 2rem;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border-left: 4px solid #00c4e6;
+}
+
+[data-theme="dark"] .card {
+  background: #1f2a36;
+  border-left: 4px solid #4dd5ef;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  color: #00c4e6;
+  margin-bottom: 1.2rem;
+}
+
+[data-theme="dark"] .cardIcon {
+  color: #4dd5ef;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #1a2b49;
+}
+
+[data-theme="dark"] .card h3 {
+  color: #e6f7fa;
+}
+
+.card p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+[data-theme="dark"] .card p {
+  color: #c0cad4;
+}
+
+/* Icon as aside marker */
+.card::before {
+  content: "🚀";
+  position: absolute;
+  left: -2.2rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  background-color: #00c4e6;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .card::before {
+  background-color: #4dd5ef;
+  color: #1d2327;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem 0;
+  }
+
+  .whatWeDo {
+    padding: 4rem 1rem;
+  }
+}
+
+
+
+/* src/pages/index.module.css */
+.trustedCompanies {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: var(--ifm-background-color);
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2rem;
+  min-height: 120px; /* Increased to accommodate larger logos */
+}
+
+.marqueeContent {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marqueeContent:hover {
+  animation-play-state: paused;
+}
+
+.companyLogo {
+  height: 80px; /* Increased from 50px to 80px */
+  margin: 0 3rem; /* Increased margin for better spacing with larger logos */
+  filter: grayscale(50%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.companyLogo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
