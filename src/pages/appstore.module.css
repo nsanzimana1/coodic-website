@@ -1,0 +1,105 @@
+.mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #87ceeb; /* Sky blue */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 2.5rem;
+    color: #87ceeb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--ifm-color-content);
+  }
+  
+  .appGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .appCard {
+    background: var(--ifm-card-background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #87ceeb;
+  }
+  
+  .appName {
+    font-size: 2rem;
+    color: #4682b4; /* Darker sky blue */
+    margin-bottom: 1rem;
+  }
+  
+  .screenshotSwiper {
+    margin: 1rem 0;
+  }
+  
+  .screenshot {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #87ceeb;
+  }
+  
+  .downloadButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .downloadButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #87ceeb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .downloadButton:hover {
+    background-color: #4682b4;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #87ceeb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #4682b4;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }

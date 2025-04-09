@@ -1,0 +1,88 @@
+.mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #87ceeb;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 2.5rem;
+    color: #87ceeb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--ifm-color-content);
+  }
+  
+  .jobGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .jobCard {
+    background: var(--ifm-card-background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #87ceeb;
+  }
+  
+  .jobTitle {
+    font-size: 2rem;
+    color: #4682b4;
+    margin-bottom: 1rem;
+  }
+  
+  .requirements {
+    list-style: disc;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--ifm-color-content);
+  }
+  
+  .applyButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #87ceeb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .applyButton:hover {
+    background-color: #4682b4;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #87ceeb;
+  }
+  
+  .link {
+    color: #4682b4;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }

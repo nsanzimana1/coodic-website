@@ -1,0 +1,146 @@
+.mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #87ceeb; /* Sky blue - stands out in dark mode */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 2.5rem;
+    color: #87ceeb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--ifm-color-content); /* Theme-aware text */
+  }
+  
+  .filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filterButton {
+    padding: 0.5rem 1rem;
+    background: var(--ifm-background-surface-color); /* Theme-aware, darker in dark mode */
+    border: 2px solid #87ceeb;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--ifm-color-content); /* Theme-aware text */
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filterButton.active,
+  .filterButton:hover {
+    background: #87ceeb; /* Sky blue highlight */
+    color: #fff; /* White text for contrast */
+  }
+  
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .projectCard {
+    background: var(--ifm-card-background-color); /* Theme-aware card bg */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for depth */
+    border-left: 5px solid #87ceeb; /* Sky blue accent */
+  }
+  
+  .projectTitle {
+    font-size: 2rem;
+    color: #4682b4; /* Darker sky blue - readable in dark mode */
+    margin-bottom: 1rem;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .tag {
+    background: #87ceeb; /* Sky blue */
+    color: #fff; /* White for contrast */
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .linkButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #87ceeb; /* Sky blue */
+    color: #fff; /* White for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .linkButton:hover {
+    background-color: #4682b4; /* Darker sky blue on hover */
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #87ceeb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #4682b4;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #87ceeb; /* Sky blue - visible in dark mode */
+  }
+  
+  .comingSoon {
+    background: #4682b4; /* Darker sky blue */
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 2px solid #87ceeb; /* Optional: border for visibility */
+  }

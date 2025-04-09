@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Start Your online Presence with coodic ',
-  tagline: 'Coodic is a powerful solution designed to help startups build innovative, scalable applications.',
+  tagline: 'From startups to enterprise if you can imagine it, we can build it',
   favicon: 'img/coodic.png',
 
   // Set the production url of your site here
@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'coodic', // Usually your GitHub org/user name.
   projectName: 'coodic website', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -43,16 +43,13 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          path: './blog', // Point to the nested blog directory
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -76,7 +73,7 @@ const config: Config = {
       items: [
         {
           to: '/about', // Create an About page if you don't have one
-          label: 'About Us',
+          label: 'About',
           position: 'right',
         },
       
@@ -86,14 +83,13 @@ const config: Config = {
           position: 'right',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'right',
+          to:'/careers',
           label: 'Careers',
+          position: 'right',
         },
         {
-          to: '/blog',
-          label: 'Blog',
+          to: '/appstore',
+          label: 'AppStore',
           position: 'right',
         },
         {
@@ -117,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: 'Web Platforms',
-              to: '/project',
+              to: '/projects',
             },
             
           ],
@@ -130,7 +126,10 @@ const config: Config = {
               to: '/about',
             },
             
-            
+            {
+              label: 'Projects',
+              to: '/projects',
+            },
       
             {
               label: 'Contact',
@@ -142,8 +141,8 @@ const config: Config = {
           title: 'Resources',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'AppStore',
+              to: '/appstore',
             },
             {
               label: 'Careers',
@@ -160,16 +159,16 @@ const config: Config = {
               href: 'https://github.com/coodic',
             },
             {
-              label: 'Discord',
-              href: 'https://discord.gg/coodic',
+              label: 'Telegram',
+              href: 'https://t.me/coodic',
             },
             {
-              label: 'X (Twitter)',
-              href: 'https://x.com/coodic',
+              label: 'Sclack',
+              href: 'https://join.slack.com/t/coodic/shared_invite/zt-33ew026hv-tAUobFrtTwh3DAZ2Cu25Gg',
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A101964191&keywords=coodic&origin=RICH_QUERY_SUGGESTION&position=0&sid=pZg',
+              href: 'https://www.linkedin.com/company/coodic/?viewAsMember=true',
             },
           ],
         },

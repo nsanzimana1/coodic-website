@@ -30,3 +30,36 @@
 [data-theme="dark"] .heroSubtitle {
   --hero-subtitle-color: #a3bffa;
 }
+
+
+/* Blog page custom styles */
+.blog-post-title {
+  font-size: 2.5rem;
+  color: #87ceeb; /* Sky blue */
+}
+
+.blog-post-meta {
+  font-size: 1.2rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.blog-post-content {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--ifm-color-content);
+}
+
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3 {
+  color: #4682b4; /* Darker sky blue */
+}
+
+/* Sidebar */
+.blog-sidebar-item {
+  font-size: 1.2rem;
+}
+
+.blog-sidebar-item a:hover {
+  color: #87ceeb;
+}

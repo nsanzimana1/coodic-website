@@ -130,7 +130,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Coodic - Empowering software startups with innovative tools"
+      description="From startups to enterprise — if you can imagine it, we can build it"
     >
       <HomepageHeader />
       <main>
