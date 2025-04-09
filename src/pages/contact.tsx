@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
         {/* Header */}
         <section className={styles.section}>
           <h1 className={styles.title}>
-            <Icon icon="mdi:email" className={styles.icon} /> Contact Us
+           Contact Us
           </h1>
           <p className={styles.text}>
             We’d love to hear from you! Reach out for questions, partnerships,
