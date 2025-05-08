@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Start Your online Presence with coodic ',
-  tagline: 'At coodic we do not just copy and paste, we codeand create.',
+  tagline: 'At coodic we do not just copy and paste, we code and create.',
   favicon: 'img/coodic.png',
 
   // Set the production url of your site here
